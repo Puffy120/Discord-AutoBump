@@ -26,7 +26,7 @@ chanID = input(f"{Fore.CYAN} Channel ID:{Fore.WHITE} ")
 chan = f"https://discordapp.com/api/v6/channels/{chanID}/messages"
 
 while True:
-    time.sleep(10)
+    time.sleep(7200)
     headers = {"authorization": token, "content-type": "application/json"}
     content = {"content":"!d bump"}
     requests.post(chan, headers=headers, data=json.dumps(content))
